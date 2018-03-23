@@ -1,0 +1,184 @@
+        @font-face {
+             font-family: 'GothamPro-Bold';
+            src: url('/Fonts/GothamPro-Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GothamPro-Light';
+            src: url('/Fonts/GothamPro-Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GothamPro-LightItalic';
+            src: url('/Fonts/GothamPro-LightItalic.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* Fonts Style*/
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-ocx-fonts-smoothing: antialiased;
+        }
+
+        h2 {
+            font-family: "GothamPro", Arial, Helvetica, sans-serif;
+            color: #221f1f;
+            font-size: 49px;
+            font-weight: 700;
+            line-height: 38px;
+        }
+
+        .price__title {
+            color: #212121;
+            font-size: 10.77px;
+            font-weight: 700;
+            line-height: 57.2px;
+        }
+
+        .price__content,
+        .price__list {
+            font-family: "GothamPro", Arial, Helvetica, sans-serif;
+            color: #221f1f;
+            font-size: 17.98px;
+            font-weight: 400;
+            line-height: 33.4px;
+        }
+
+        .number {
+            font-family: "GothamPro", Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 54px;
+            text-decoration: none;
+        }
+
+        .schudle {
+            font-family: "OpenSans", Arial, Helvetica, sans-serif;
+            color: #ec1e79;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 54px;
+            text-decoration: underline;
+        }
+
+        .sitebar__list {
+            font-family: "GothamPro", Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 54px;
+        }
+
+        .news__date {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            color: #656464;
+            line-height: 21px;
+        }
+
+        .news__name {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #221f1f;
+            line-height: 21px;
+        }
+
+        .news__content {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            color: #221f1f;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 30px;
+        }
+
+        span {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            color: #656464;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 21px;
+            text-align: left;
+        }
+
+        .page__number a {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            color: #221f1f;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: normal;
+            text-decoration: none;
+        }
+
+        .foot__copyright {
+            font-family: "GothamPro", Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 18px;
+        }
+
+        .foot__copyright a {
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .foot__social {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .counter__page-list li,
+        .foot__social-icon li {
+            display: inline-block;
+        }
+
+        .head__back {
+            background-color: #27273e;
+        }
+
+        .header__logo {
+            background-color: #27273e;
+        }
+
+        .reviews__link,
+        .rates__link {
+            color: #ec1e79;
+            text-decoration: none;
+        }
+
+        .avatar__pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+
+        .price__icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background-color: #27273e;
+        }
+
+        .social-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #d4d4d8;
+        }
+
+        .foot__back {
+            background-color: #27273e;        

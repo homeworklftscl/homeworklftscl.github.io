@@ -26,6 +26,10 @@
     background-color: #27273e;
 }
 
+.logo {
+    display: block;
+}
+
 .phone {
     font-family: "GothamPro", Arial, Helvetica, sans-serif;
     color: #ffffff;

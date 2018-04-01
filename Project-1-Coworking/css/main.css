@@ -1,65 +1,155 @@
 @font-face {
     font-family: 'GothamPro-Bold';
-    src: url('/Fonts/GothamPro-Bold.woff') format('woff');
+    src: url('../Fonts/GothamPro-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GothamPro-Light';
-    src: url('/Fonts/GothamPro-Light.woff') format('woff');
+    src: url('../Fonts/GothamPro-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GothamPro-LightItalic';
-    src: url('/Fonts/GothamPro-LightItalic.woff') format('woff');
+    src: url('../Fonts/GothamPro-LightItalic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    line-height: 1.42;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 /*HEADER*/
 
-.conteiner {
-    background-color: #27273e;
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    min-width: 1100px;
+    min-height: 100%;
 }
 
-.logo {
+.wrapper:after {
+    content: "";
     display: block;
+    height: 77px;
+}
+
+.header {
+    background-color: #27273e;
+    margin-bottom: 56px;
+}
+
+.conteiner {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.clearfix :after {
+    content: "";
+    clear: both;
+}
+
+.header__left,
+.header__right {
+    float: left;
+    display: block;
+    width: 50%;
+}
+
+.header__right {
+    text-align: right;
+    padding-top: 22px;
+    vertical-align: top;
+}
+
+.logo__img {
+    padding-top: 13px;
+    margin-left: 20px;
 }
 
 .phone {
-    font-family: "GothamPro", Arial, Helvetica, sans-serif;
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 21px;
     font-weight: 700;
-    line-height: 54px;
-    text-decoration: none;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 6px;
 }
 
-.schudle {
-    font-family: "OpenSans", Arial, Helvetica, sans-serif;
+.schudle__text {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color: #ec1e79;
     font-size: 14px;
     font-weight: 700;
+    margin-right: 20px;
+    padding-bottom: 17px;
     text-decoration: underline;
 }
 
+.schudle:hover .schudle__text {
+    color: rgba(93, 209, 248, 0.7);
+}
 
 /*NAVIGATION*/
 
-li {
-    list-style-type: none;
+.navigation,
+.content {
+    float: left;
+}
+
+.navigation {
+    width: 15%;
+    margin-right: 3%;
+}
+
+.content {
+    width: 77%;
+}
+
+.navigation__item {
+    margin-left: 20px;
+    margin-bottom: 38px;
 }
 
 .navigation__link {
-    font-family: "GothamPro", Arial, Helvetica, sans-serif;
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 700;
     color: #ec1e79;
-    text-decoration: none;
+    text-transform: uppercase;
     padding-left: 40px;
     width: 20px;
     height: 18px;
@@ -70,35 +160,51 @@ li {
     color: #000;
 }
 
-.navigation__link--icon {
-    background-repeat: no-repeat;
+.navigation__link--icon :before {
+    content: "";
+    vertical-align: middle;
+    margin-right: 19px;
 }
 
 .navigation__link--main-icon {
     background-image: url(../img/main_icon.png);
+    width: 17px;
+    height: 15px;
+    background-repeat: no-repeat;
 }
 
 .navigation__link--feed-icon {
     background-image: url(../img/feed_icon_pink.png);
+    width: 20px;
+    height: 18px;
+    background-repeat: no-repeat;
 }
 
 .navigation__link--wallet-icon {
     background-image: url(../img/wallet_icon_pink.png);
+    width: 19px;
+    height: 16px;
+    background-repeat: no-repeat;
 }
-
 
 /*ASIDE*/
 
 .title {
-    font-family: "GothamPro", Arial, Helvetica, sans-serif;
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #221f1f;
     font-size: 49px;
     font-weight: 700;
+    padding-bottom: 88px;
+}
+
+.features__item {
+    display: inline-block;
 }
 
 .feature__icons {
     width: 68px;
     height: 68px;
+    line-height: 68px;
     background-color: #27273e;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -106,14 +212,17 @@ li {
 
 .feature__icons_icon_floweres {
     background-image: url(../img/flower.png);
+    background-position: center;
 }
 
 .feature__icons_icon_star {
     background-image: url(../img/star.png);
+    background-position: center;
 }
 
 .feature__icons_icon_palette {
     background-image: url(../img/palette.png);
+    background-position: center;
 }
 
 .feature__title {
@@ -124,15 +233,10 @@ li {
 
 .feature__description,
 .text {
-    font-family: "GothamPro", Arial, Helvetica, sans-serif;
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #221f1f;
     font-size: 17.98px;
     font-weight: 400;
-}
-
-.feature__item {
-    list-style-type: disc;
-    color: #ec1e79;
 }
 
 .news__img {
@@ -177,7 +281,6 @@ li {
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
-    text-decoration: none;
     display: inline-block;
 }
 
@@ -195,14 +298,46 @@ li {
     background-image: url(../img/next.jpg);
 }
 
-
 /*FOOTER*/
 
+.footer {
+    background-color: #27273e;
+    position: relative;
+    height: 77px;
+    margin-top: -77px;
+    padding-top: 14px;
+}
+
+.footer__copyright,
+.footer__logo,
+.footer__socials {
+    width: 33.3%;
+    float: left;
+    display: inline-block;
+}
+
+.footer__logo {
+    text-align: center;
+}
+
+.footer__socials {
+    text-align: right;
+}
+
+.socials {
+    display: inline-block;
+}
+
+.socials__list {
+    text-align: left;
+}
+
 .social__text {
-    font-family: "GothamPro", Arial, Helvetica, sans-serif;
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
+    display: inline-block;
 }
 
 .socials__link {
@@ -211,6 +346,7 @@ li {
     width: 20px;
     height: 20px;
     display: inline-block;
+    position: relative;
 }
 
 .socials__link_color_pink {
@@ -222,7 +358,7 @@ li {
 }
 
 .copyright {
-    font-family: "GothamPro", Arial, Helvetica, sans-serif;
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;

@@ -26,7 +26,7 @@
                 <div class="header__top clearfix">
                     <div class="header__left">
                         <a href="#" class="logo">
-                            <img src="./img/logo-fig.png" alt="logo head" class="logo__img">
+                            <img src="./img/logo-fig.png" alt="logo head" class="logo-head__img">
                         </a>
                     </div>
                     <div class="header__right">
@@ -48,14 +48,20 @@
                 <aside class="sidebar">
                     <nav class="navigation">
                         <ul class="navigation__list">
-                            <li class="navigation__item">
-                                <a href="" class="navigation__link navigation__link_color_black navigation__link--icon navigation__link--main-icon">Главная</a>
+                            <li class="navigation__item ">
+                                <a class="navigation__link navigation__link_color_black navigation__link--icon navigation__link--main-icon">
+                                    Главная
+                                </a>
                             </li>
                             <li class="navigation__item">
-                                <a href="" class="navigation__link navigation__link--icon navigation__link--feed-icon">Отзывы</a>
+                                <a href="" class="navigation__link navigation__link__star_active navigation__link--icon navigation__link--feed-icon">
+                                    Отзывы
+                                </a>
                             </li>
                             <li class="navigation__item">
-                                <a href="" class="navigation__link navigation__link--icon navigation__link--wallet-icon">Тарифы</a>
+                                <a href="" class="navigation__link navigation__link__wallet_active navigation__link--icon navigation__link--wallet-icon">
+                                    Тарифы
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -67,7 +73,7 @@
                             <li class="features__item">
                                 <div class="feature">
                                     <div class="feature__icons feature__icons_icon_floweres"></div>
-                                    <h3 class="feature__title">УНИКАЛЬНОСТЬ</h3>
+                                    <h3 class="feature__title">уникальность</h3>
                                     <p class="feature__description">Создан для вашего комфортного отдыха</p>
                                     <ul class="feature__list">
                                         <li class="feature__item">Кофе/Чай</li>
@@ -104,10 +110,10 @@
                         </ul>
                     </div>
                     <div class="last-news">
-                        <h2 class="title">Последние новости</h2>
+                        <h2 class="last-news__title">Последние новости</h2>
                         <ul class="last-news__list">
                             <li class="last-news__item">
-                                <div class="news">
+                                <div class="news clearfix">
                                     <div class="news__avatar">
                                         <img src="./img/Layer 6.jpg" alt="" class="news__img">
                                     </div>                                    
@@ -123,7 +129,7 @@
                                 </div>
                             </li>
                             <li class="last-news__item">
-                                <div class="news">
+                                <div class="news clearfix">
                                     <div class="news__avatar">
                                         <img src="./img/Layer 7.jpg" alt="" class="news__img">
                                     </div>
@@ -138,7 +144,7 @@
                                 </div>
                             </li>
                             <li class="last-news__item">
-                                <div class="news">
+                                <div class="news clearfix">
                                     <div class="news__avatar">
                                         <img src="./img/Layer 9.jpg" alt="" class="news__img">
                                     </div>
@@ -154,32 +160,38 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="pagination">
-                            <div class="pagination__info">Страница
-                                <span class="pagination__current">1</span> из
-                                <span class="pagination__total">7</span>
-                            </div>
-                            <div class="pagination__btns">
-                                <a href="#" class="pagination__btn pagination__btn_icon_prev"></a>
-                                <ul class="pagination__list">
-                                    <li class="pagination__item">
-                                        <a href="#" class="pagination__link">1</a>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <a href="#" class="pagination__link">2</a>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <a href="#" class="pagination__link">3</a>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <a href="#" class="pagination__link">4</a>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <a href="#" class="pagination__link">5</a>
-                                    </li>
-                                </ul>
-                                <a href="#" class="pagination__btn pagination__btn_icon_next"></a>
-                            </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="pagination__info">Страница
+                            <span class="pagination__current">1</span> из
+                            <span class="pagination__total">7</span>
+                        </div>
+                        <div class="pagination__btns">
+                            <a href="#" class="pagination__btn pagination__btn_icon_prev"></a>
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link pagination__link__active">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">4</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">5</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">6</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">7</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="pagination__btn pagination__btn_icon_next"></a>
                         </div>
                     </div>
                 </div>
@@ -187,17 +199,17 @@
         </main>
     </div>
     <footer class="footer">
-        <div class="conteiner">
+        <div class="conteiner clearfix">
             <div class="footer__copyright">
                 <div class="copyright">
-                    Сделано с любовью и старанием на курсе в
-                    <a href="https://loftschool.com/" class="copyright__link">LoftSchool</a>
+                     Сделано с любовью и старанием на курсе «HTML + CSS» в
+                    <a href="https://loftschool.com/" class="copyright__link">LoftSchool</a>.
                 <br> Автор работы: <a class="copyright__link" href="https://vk.com/sneakerlove">Чинчук Артём</a>
                 </div>
             </div>            
                 <div class="footer__logo">
                     <a href="#" class="logo">
-                        <img src="./img/logo-fig.png" alt="" class="logo__img">
+                        <img src="./img/logo-fig.png" alt="" class="logo-footer__img">
                     </a>
                 </div>
             <div class="footer__socials">
@@ -205,28 +217,23 @@
                         <span class="social__text">Наши социальные сети</span>
                         <ul class="socials__list">
                             <li class="socials__item">
-                                <a href="#" class="socials__link socials__link_color_pink">
-                                    <img src="./img/vk.png" alt="" class="socials__icon">
+                                <a href="#" class="socials__link socials__link_vk">   
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <img src="./img/fb.png" alt="" class="socials__icon">
+                                <a href="#" class="socials__link socials__link_fb">
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <img src="./img/google.png" alt="" class="socials__icon">
+                                <a href="#" class="socials__link socials__link_google">
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <img src="./img/twitter.png" alt="" class="socials__icon">
+                                <a href="#" class="socials__link socials__link_twitter">
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <img src="./img/mail.png" alt="" class="socials__icon">
+                                <a href="#" class="socials__link socials__link_mail">
                                 </a>
                             </li>
                         </ul>

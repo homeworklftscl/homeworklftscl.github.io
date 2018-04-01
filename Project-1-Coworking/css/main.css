@@ -76,9 +76,18 @@ ul {
     width: 1100px;
 }
 
-.clearfix :after {
+.clearfix:before,
+.clearfix:after {
     content: "";
+    display: table;
+}
+
+.clearfix:after {
     clear: both;
+}
+
+.header__top {
+    padding-top: 12px;
 }
 
 .header__left,
@@ -90,12 +99,11 @@ ul {
 
 .header__right {
     text-align: right;
-    padding-top: 22px;
+    padding-top: 9px;
     vertical-align: top;
 }
 
-.logo__img {
-    padding-top: 13px;
+.logo-head__img {
     margin-left: 20px;
 }
 
@@ -107,6 +115,7 @@ ul {
     margin-right: 20px;
     letter-spacing: 2px;
     padding-bottom: 6px;
+    display: block;
 }
 
 .schudle__text {
@@ -117,6 +126,7 @@ ul {
     margin-right: 20px;
     padding-bottom: 17px;
     text-decoration: underline;
+    display: block;
 }
 
 .schudle:hover .schudle__text {
@@ -153,11 +163,13 @@ ul {
     padding-left: 40px;
     width: 20px;
     height: 18px;
+    vertical-align: middle;
     display: block;
 }
 
 .navigation__link_color_black {
     color: #000;
+    text-decoration: underline;
 }
 
 .navigation__link--icon :before {
@@ -187,6 +199,24 @@ ul {
     background-repeat: no-repeat;
 }
 
+.navigation__link__star_active:hover,
+.navagation__link--star-icon {
+    color: #221f1f;
+    background-image: url(../img/feed_icon.png);
+    width: 20px;
+    height: 18px;
+    background-repeat: no-repeat;
+}
+
+.navigation__link__wallet_active:hover,
+.navagation__link--wallet-icon {
+    color: #221f1f;
+    background-image: url(../img/wallet_icon.png);
+    width: 20px;
+    height: 18px;
+    background-repeat: no-repeat;
+}
+
 /*ASIDE*/
 
 .title {
@@ -194,11 +224,27 @@ ul {
     color: #221f1f;
     font-size: 49px;
     font-weight: 700;
-    padding-bottom: 88px;
+    padding-bottom: 64px;
+    margin-top: -15px;
+}
+
+.content {
+    width: 880px;
+}
+
+.features__list {
+    font-size: 0;
+    margin-left: -20px;
+    display: inline-block;
+    text-align: center;
 }
 
 .features__item {
+    width: 250px;
+    margin-left: 20px;
     display: inline-block;
+    vertical-align: top;
+    padding-bottom: 73px;
 }
 
 .feature__icons {
@@ -208,6 +254,19 @@ ul {
     background-color: #27273e;
     border-radius: 50%;
     background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 29px;
+}
+
+.feature__item::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #cc3366;
+    border-radius: 50%;
+    margin-right: 30px;
+    vertical-align: middle;
 }
 
 .feature__icons_icon_floweres {
@@ -226,17 +285,67 @@ ul {
 }
 
 .feature__title {
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #212121;
     font-size: 10.77px;
     font-weight: 700;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature__item {
+    text-align-last: left;
+    text-indent: 28px;
+    padding-bottom: 20px;
+}
+
+.feature__description {
+    display: inline-block;
+    padding-bottom: 20px;
 }
 
 .feature__description,
-.text {
+.text,
+.feature__item {
     font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #221f1f;
     font-size: 17.98px;
     font-weight: 400;
+}
+
+.last-news__title {
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+    color: #221f1f;
+    font-size: 49px;
+    font-weight: 700;
+    padding-bottom: 45px;
+}
+
+.news__avatar,
+.news__content {
+    float: left;
+}
+
+.news__content {
+    width: 700px;
+}
+
+.news__avatar {
+    padding-right: 20px;
+}
+
+.news {
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.last-news__item {
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.last-news__item:last-child {
+    border: none;
 }
 
 .news__img {
@@ -250,6 +359,8 @@ ul {
     font-size: 14px;
     font-weight: 300;
     color: #656464;
+    line-height: 21px;
+    padding-bottom: 5px;
 }
 
 .news__title {
@@ -257,6 +368,8 @@ ul {
     font-size: 18px;
     font-weight: 700;
     color: #221f1f;
+    line-height: 21px;
+    padding-bottom: 5px;
 }
 
 .news__description {
@@ -264,6 +377,30 @@ ul {
     color: #221f1f;
     font-size: 18px;
     font-weight: 300;
+    line-height: 30px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 74px;
+}
+
+.pagination__info,
+.pagination__btns,
+.pagination__btn,
+.pagination__list,
+.pagination__item {
+    display: inline-block;
+}
+
+.pagination__info {
+    margin-right: 13px;
+}
+
+.pagination__link,
+.pagination__btn_icon_next {
+    margin-left: 13px;
 }
 
 .pagination__info {
@@ -281,13 +418,26 @@ ul {
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
-    display: inline-block;
 }
 
 .pagination__btn {
     width: 6px;
     height: 10px;
+}
+
+.pagination__link {
+    border-radius: 3px;
+    padding: 5px 10px;
     display: inline-block;
+}
+
+.pagination__link__active {
+    background-color: #27273e;
+    color: #ec1e79;
+}
+
+.pagination__item:hover .pagination__link {
+    color: #ec1e79
 }
 
 .pagination__btn_icon_prev {
@@ -337,7 +487,37 @@ ul {
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
+    margin-bottom: 8px;
     display: inline-block;
+}
+
+.socials__link_vk {
+    background: url(../img/vk.png) no-repeat;
+    background-position: center;
+}
+
+.socials__link_fb {
+    background: url(../img/fb.png) no-repeat;
+    background-position: center;
+}
+
+.socials__link_google {
+    background: url(../img/google.png) no-repeat;
+    background-position: center;
+}
+
+.socials__link_twitter {
+    background: url(../img/twitter.png) no-repeat;
+    background-position: center;
+}
+
+.socials__link_mail {
+    background: url(../img/mail.png) no-repeat;
+    background-position: center;
+}
+
+.socials__link:hover {
+    background-color: #ec1e79;
 }
 
 .socials__link {
@@ -345,12 +525,8 @@ ul {
     background-color: #d4d4d8;
     width: 20px;
     height: 20px;
+    margin-right: 7px;
     display: inline-block;
-    position: relative;
-}
-
-.socials__link_color_pink {
-    background-color: #ec1e79;
 }
 
 .socials__item {
@@ -362,6 +538,7 @@ ul {
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;
+    width: 264px;
 }
 
 .copyright__link {

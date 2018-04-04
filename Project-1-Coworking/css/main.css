@@ -140,6 +140,7 @@ ul {
 
 .schudle:hover .schudle__text {
     color: rgba(93, 209, 248, 0.7);
+    transition: .4s;
 }
 
 /*NAVIGATION*/
@@ -208,6 +209,7 @@ ul {
     width: 20px;
     height: 18px;
     background-repeat: no-repeat;
+    transition: .4s;
 }
 
 .navigation__link__wallet_active:hover,
@@ -217,6 +219,7 @@ ul {
     width: 20px;
     height: 18px;
     background-repeat: no-repeat;
+    transition: .4s;
 }
 
 /*ASIDE*/
@@ -352,6 +355,7 @@ ul {
 
 .last-news__item:last-child {
     border: none;
+    margin-bottom: 50px;
 }
 
 .news__img {
@@ -445,7 +449,8 @@ ul {
 }
 
 .pagination__item:hover .pagination__link {
-    color: #ec1e79
+    color: #ec1e79;
+    transition: .4s;
 }
 
 .pagination__btn_icon_prev {
@@ -482,12 +487,14 @@ ul {
     display: block;
     margin: 0 auto;
 }
+
 .footer__socials {
     text-align: right;
 }
 
 .socials {
     display: inline-block;
+    line-height: 17px;
 }
 
 .socials__list {
@@ -530,6 +537,7 @@ ul {
 
 .socials__link:hover {
     background-color: #ec1e79;
+    transition: .4s;
 }
 
 .socials__link {

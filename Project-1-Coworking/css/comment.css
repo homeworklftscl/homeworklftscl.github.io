@@ -132,6 +132,7 @@ ul {
 
 .schudle:hover .schudle__text {
     color: rgba(93, 209, 248, 0.7);
+    transition: .4s;
 }
 
 /*sidebar*/
@@ -198,6 +199,7 @@ ul {
     color: #221f1f;
     background-image: url(../img/main_icon.png);
     background-repeat: no-repeat;
+    transition: .4s;
 }
 
 .navigation__link__wallet_active:hover,
@@ -205,6 +207,7 @@ ul {
     color: #221f1f;
     background-image: url(../img/wallet_icon.png);
     background-repeat: no-repeat;
+    transition: .4s;
 }
 
 /*breadcrumbs*/
@@ -382,7 +385,8 @@ ul {
 }
 
 .pagination__item:hover .pagination__link {
-    color: #ec1e79
+    color: #ec1e79;
+    transition: .4s;
 }
 
 .pagination__btn_icon_prev {
@@ -550,6 +554,7 @@ ul {
 
 .btn__submit:hover {
     background-color: #ec1e79;
+    transition: .4s;
 }
 
 .radio__yes,
@@ -590,6 +595,7 @@ ul {
 }
 
 .text__radio::before {
+    content: "";
     color: #ec1e79;
 }
 
@@ -628,6 +634,7 @@ ul {
 
 .footer__logo {
     text-align: center;
+    padding-bottom: 14px;
 }
 
 .footer__socials {
@@ -636,6 +643,8 @@ ul {
 
 .socials {
     display: inline-block;
+    padding-bottom: 14px;
+    line-height: 15px;
 }
 
 .socials__list {
@@ -678,6 +687,7 @@ ul {
 
 .socials__link:hover {
     background-color: #ec1e79;
+    transition: .4s;
 }
 
 .socials__link {
@@ -699,6 +709,7 @@ ul {
     font-size: 14px;
     font-weight: 300;
     width: 264px;
+    padding-bottom: 14px;
 }
 
 .copyright__link {

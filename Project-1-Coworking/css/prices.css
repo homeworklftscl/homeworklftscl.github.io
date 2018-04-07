@@ -185,12 +185,14 @@ ul {
 .navigation__link--main-icon {
     background-image: url(../img/main_icon_pink.png);
     background-repeat: no-repeat;
+    transition: .4s;
 }
 
 .navigation__link--feed-icon {
     background-image: url(../img/feed_icon_pink.png);
     height: 18px;
     background-repeat: no-repeat;
+    transition: .4s;
 }
 
 .navigation__link--wallet-icon {

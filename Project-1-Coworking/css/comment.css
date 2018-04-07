@@ -185,6 +185,7 @@ ul {
 .navigation__link--main-icon {
     background-image: url(../img/main_icon_pink.png);
     background-repeat: no-repeat;
+    transition: .4s;
 }
 
 .navigation__link--feed-icon {
@@ -196,6 +197,7 @@ ul {
 .navigation__link--wallet-icon {
     background-image: url(../img/wallet_icon_pink.png);
     background-repeat: no-repeat;
+    transition: .4s;
 }
 
 .navigation__link__main_active:hover,
@@ -203,7 +205,6 @@ ul {
     color: #221f1f;
     background-image: url(../img/main_icon.png);
     background-repeat: no-repeat;
-    transition: .4s;
 }
 
 .navigation__link__wallet_active:hover,
@@ -211,7 +212,6 @@ ul {
     color: #221f1f;
     background-image: url(../img/wallet_icon.png);
     background-repeat: no-repeat;
-    transition: .4s;
 }
 
 /*breadcrumbs*/
@@ -553,11 +553,11 @@ ul {
     text-transform: uppercase;
     letter-spacing: 2.4px;
     cursor: pointer;
+    transition: .4s;
 }
 
 .btn__submit:hover {
     background-color: #ec1e79;
-    transition: .4s;
 }
 
 .radio__yes,

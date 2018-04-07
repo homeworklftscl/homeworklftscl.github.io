@@ -86,13 +86,12 @@ ul {
 }
 
 .header__top {
-    padding-top: 12px;
+    padding: 12px 0;
 }
 
 .header__left {
     float: left;
     width: 50%;
-    display: block;
 }
 
 .header__right {
@@ -101,10 +100,6 @@ ul {
     text-align: right;
     padding-top: 9px;
     line-height: 20px;
-}
-
-.banner__img {
-    display: block;
 }
 
 .logo {
@@ -120,6 +115,9 @@ ul {
     margin-bottom: 6px;
 }
 
+.schudle {
+    display: block;
+}
 
 .schudle__text {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -138,14 +136,12 @@ ul {
     transition: .4s;
 }
 
-
-
 .main-content {
     margin-bottom: 74px;
     margin-top: 72px;
 }
 
-/*NAVIGATION*/
+/*sidebar*/
 
 .sidebar,
 .content {
@@ -187,7 +183,7 @@ ul {
 }
 
 .navigation__link--main-icon {
-    background-image: url(../img/main_icon.png);
+    background-image: url(../img/main_icon_pink.png);
     background-repeat: no-repeat;
 }
 
@@ -195,272 +191,164 @@ ul {
     background-image: url(../img/feed_icon_pink.png);
     height: 18px;
     background-repeat: no-repeat;
-    transition: .4s;
 }
 
 .navigation__link--wallet-icon {
-    background-image: url(../img/wallet_icon_pink.png);
+    background-image: url(../img/wallet_icon.png);
+    background-repeat: no-repeat;
+}
+
+.navigation__link__main_active:hover,
+.navagation__link--main-icon {
+    color: #221f1f;
+    background-image: url(../img/main_icon.png);
     background-repeat: no-repeat;
     transition: .4s;
 }
 
-.navigation__link__star_active:hover,
-.navagation__link--star-icon {
+.navigation__link__feed_active:hover,
+.navagation__link--feed-icon {
     color: #221f1f;
     background-image: url(../img/feed_icon.png);
-    width: 20px;
-    height: 18px;
-    background-repeat: no-repeat;
-}
-
-.navigation__link__wallet_active:hover,
-.navagation__link--wallet-icon {
-    color: #221f1f;
-    background-image: url(../img/wallet_icon.png);
-    width: 20px;
-    height: 18px;
     background-repeat: no-repeat;
     transition: .4s;
 }
 
-/*ASIDE*/
+/*breadcrumbs*/
+
+.breadcrumbs {
+    margin-top: -7px;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+}
+
+.breadcrumbs__item-link {
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+    color: #ec1e79;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.breadcrumbs__item::after {
+    content: " /";
+    color: #a2a2a2;
+}
+
+.breadcrumbs__item:last-child:after {
+    display: none;
+}
+
+.breadcrumbs__item-link_active {
+    color: #a2a2a2;
+    text-decoration: none;
+}
+
+/*NEWS*/
 
 .title {
     font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #221f1f;
     font-size: 49px;
     font-weight: 700;
-    line-height: 38px;
-    margin-bottom: 64px;
+    margin-bottom: 43px;
 }
 
-.content {
-    width: 880px;
-}
-
-.features {
-    margin-bottom: 93px;
-}
-
-.features__list {
+.prices__list {
     font-size: 0;
-    margin-left: -20px;
-    display: inline-block;
+    margin-left: -55px;
+}
+
+.price__title {
+    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+    color: #221f1f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.features__item {
-    width: 250px;
-    margin-left: 20px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.feature__icons {
-    width: 68px;
-    height: 68px;
-    line-height: 68px;
-    background-color: #27273e;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    margin-bottom: 29px;
-}
-
-.feature__item::before {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: #cc3366;
-    border-radius: 50%;
-    margin-right: 30px;
-    vertical-align: middle;
-}
-
-.feature__icons_icon_floweres {
-    background-image: url(../img/flower.png);
-    background-position: center;
-}
-
-.feature__icons_icon_star {
-    background-image: url(../img/star.png);
-    background-position: center;
-}
-
-.feature__icons_icon_palette {
-    background-image: url(../img/palette.png);
-    background-position: center;
-}
-
-.feature__title {
-    font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-    color: #212121;
-    font-size: 10.77px;
-    font-weight: 700;
-    margin-bottom: 28px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.feature__item {
-    text-align-last: left;
-    text-indent: 28px;
-    margin-bottom: 20px;
-}
-
-.feature__item:last-child {
-    margin-bottom: 0;
-}
-
-.feature__description {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.feature__description,
-.text,
-.feature__item {
+.price__description {
     font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
     color: #221f1f;
-    font-size: 17.98px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.8;
+    line-height: 21px;
 }
 
-.title__margin_bottom {
-    margin-bottom: 75px;
-}
-
-/*NEWS*/
-
-.news__avatar,
-.news__content {
-    float: left;
-}
-
-.news__content {
-    width: 700px;
-}
-
-.news__content {
-    margin-left: 20px;
-}
-
-.last-news__item {
-    border-bottom: 2px solid #f5f5f5;
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-}
-
-.last-news__item:last-child::before {
-    margin-bottom: 47px;
-}
-
-.last-news__item:last-child {
-    border: none;
+.prices__item {
+    width: 250px;
+    margin-left: 55px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
     margin-bottom: 50px;
 }
 
-.news__img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+.price__icon {
+    width: 250px;
+    height: 153px;
+    margin-bottom: 26px;
 }
 
-.news__date {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: #656464;
-    line-height: 21px;
-    padding-bottom: 5px;
+.price__icon_one {
+    background-image: url(../img/price/one.png);
 }
 
-.news__title {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #221f1f;
-    line-height: 21px;
-    padding-bottom: 5px;
+.price__icon_three {
+    background-image: url(../img/price/three.png);
 }
 
-.news__description {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    color: #221f1f;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 30px;
+.price__icon_ten {
+    background-image: url(../img/price/10-10.png);
 }
 
-.pagination {
+.price__icon_vip {
+    background-image: url(../img/price/vip-crew.png);
+}
+
+.price__icon_all {
+    background-image: url(../img/price/all.png);
+}
+
+.price__icon_conversation {
+    background-image: url(../img/price/conversation.png);
+}
+
+/*PARTNERS*/
+
+.partners__list {
+    font-size: 0;
+    margin-left: -110px;
+}
+
+.partners__item {
+    width: 165px;
+    height: 40px;
+    margin-left: 110px;
+    margin-bottom: 65px;
     text-align: center;
-}
-
-.pagination__info,
-.pagination__btns,
-.pagination__btn,
-.pagination__list,
-.pagination__item {
+    filter: grayscale(100%);
     display: inline-block;
-}
-
-.pagination__info {
-    margin-right: 13px;
-}
-
-.pagination__btn_icon_prev {
-    margin-right: 15px;
-}
-
-.pagination__btn_icon_next {
-    margin-left: 10px;
-}
-
-.pagination__info {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    color: #656464;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.pagination__link,
-.pagination__item,
-.pagination__list {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    color: #221f1f;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
     transition: .4s;
 }
 
-.pagination__btn {
-    width: 6px;
-    height: 10px;
+.partners__item:hover {
+    filter: grayscale(0);
 }
 
-.pagination__link {
-    border-radius: 3px;
-    padding: 5px 10px;
+.partners__link {
+    vertical-align: middle;
+}
+
+.partners__logo {
     display: inline-block;
-}
-
-.pagination__link__active {
-    background-color: #27273e;
-    color: #ec1e79;
-}
-
-.pagination__item:hover .pagination__link {
-    color: #ec1e79;
-}
-
-.pagination__btn_icon_prev {
-    background-image: url(../img/back-arrow.jpg);
-}
-
-.pagination__btn_icon_next {
-    background-image: url(../img/next.jpg);
 }
 
 /*FOOTER*/

@@ -246,7 +246,6 @@ ul {
 .navigation__item {
     margin-bottom: 38px;
     line-height: 20px;
-    transition: .5s;
 }
 
 .navigation__link {

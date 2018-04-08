@@ -224,11 +224,6 @@ ul {
     margin-top: 72px;
 }
 
-.main-content {
-    margin-bottom: 74px;
-    margin-top: 72px;
-}
-
 /*sidebar*/
 
 .sidebar,
@@ -236,7 +231,7 @@ ul {
     float: left;
 }
 
-.navigation {
+.sidebar {
     width: 160px;
     margin-right: 20px;
 }
@@ -247,6 +242,11 @@ ul {
 
 .navigation__item {
     margin-bottom: 38px;
+    line-height: 20px;
+}
+
+.navigation__list {
+    width: 100px;
 }
 
 .navigation__link {
@@ -266,41 +266,32 @@ ul {
 }
 
 .navigation__link--main-icon {
-    width: 17px;
-    height: 15px;
     background-position: -10px -45px;
 }
 
 .navigation__link--main-icon:hover {
-    width: 17px;
-    height: 15px;
     background-position: -10px -10px;
     color: #000;
 }
 
 .navigation__link--feed-icon {
-    width: 20px;
-    height: 18px;
     background-position: -10px -190px;
     ;
 }
 
 .navigation__link--feed-icon:hover {
-    width: 20px;
-    height: 18px;
     background-position: -10px -152px;
     color: #000;
 }
 
 .navigation__link--wallet-icon {
-    width: 19px;
-    height: 16px;
-    background-position: -10px -80px;
+    background-position: -10px -116px;
 }
 
-.navigation__link_color_black {
+.navigation__item_activ .navigation__link--wallet-icon {
     color: #000;
     text-decoration: underline;
+    background-position: -10px -80px;
 }
 
 /*breadcrumbs*/

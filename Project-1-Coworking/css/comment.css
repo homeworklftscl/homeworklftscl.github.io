@@ -133,7 +133,6 @@ ul {
 
 .sсhudle:hover .schudle__text {
     color: rgba(93, 209, 248, 0.7);
-    transition: .4s;
 }
 
 .schudle__wrap {
@@ -224,11 +223,6 @@ ul {
     margin-top: 72px;
 }
 
-.main-content {
-    margin-bottom: 74px;
-    margin-top: 72px;
-}
-
 /*sidebar*/
 
 .sidebar,
@@ -236,7 +230,7 @@ ul {
     float: left;
 }
 
-.navigation {
+.sidebar {
     width: 160px;
     margin-right: 20px;
 }
@@ -245,8 +239,14 @@ ul {
     width: 880px;
 }
 
+.navigation__list {
+    width: 100px;
+}
+
 .navigation__item {
     margin-bottom: 38px;
+    line-height: 20px;
+    transition: .5s;
 }
 
 .navigation__link {
@@ -262,45 +262,34 @@ ul {
 .navigation__link--icon {
     background-repeat: no-repeat;
     background-image: url(../img/css_sprites.png);
-    transition: .5s;
 }
 
 .navigation__link--main-icon {
-    width: 17px;
-    height: 15px;
     background-position: -10px -45px;
 }
 
 .navigation__link--main-icon:hover {
-    width: 17px;
-    height: 15px;
     background-position: -10px -10px;
     color: #000;
 }
 
 .navigation__link--feed-icon {
-    width: 20px;
-    height: 18px;
-    background-position: -10px -152px;
-    ;
+    background-position: -10px -190px;
 }
 
 .navigation__link--wallet-icon {
-    width: 19px;
-    height: 16px;
     background-position: -10px -116px;
 }
 
 .navigation__link--wallet-icon:hover {
-    width: 19px;
-    height: 16px;
     background-position: -10px -80px;
     color: #000;
 }
 
-.navigation__link_color_black {
+.navigation__item_activ .navigation__link--feed-icon {
     color: #000;
     text-decoration: underline;
+    background-position: -10px -152px;
 }
 
 /*breadcrumbs*/
@@ -458,7 +447,6 @@ ul {
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
-    transition: .4s;
 }
 
 .pagination__btn {
@@ -479,7 +467,6 @@ ul {
 
 .pagination__item:hover .pagination__link {
     color: #ec1e79;
-    transition: .4s;
 }
 
 .pagination__btn_icon_prev {
@@ -642,7 +629,6 @@ ul {
     text-transform: uppercase;
     letter-spacing: 2.4px;
     cursor: pointer;
-    transition: .4s;
 }
 
 .btn__submit:hover {
@@ -683,7 +669,6 @@ ul {
     background-color: #ec1e79;
     border-radius: 50%;
     transform: scale(0);
-    transition: .4s;
 }
 
 .btn__radio__yes::before {
@@ -790,7 +775,6 @@ ul {
     width: 20px;
     height: 20px;
     margin-right: 7px;
-    transition: .4s;
     display: inline-block;
 }
 

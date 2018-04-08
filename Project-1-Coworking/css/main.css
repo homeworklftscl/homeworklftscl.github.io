@@ -132,7 +132,7 @@ ul {
     display: inline-block;
 }
 
-.schudle:hover  .schudle__text{
+.sсhudle:hover .schudle__text {
     color: rgba(93, 209, 248, 0.7);
     transition: .4s;
 }
@@ -151,7 +151,8 @@ ul {
     position: absolute;
     z-index: 10;
     margin-top: 20px;
-    right: -9999px;
+    right: 18%;
+    right: -300px;
 }
 
 .drop__wrap::before {
@@ -162,7 +163,6 @@ ul {
     bottom: 100%;
     left: 0;
     display: block;
-    right: 9999px;
 }
 
 .drop__item {
@@ -187,8 +187,9 @@ ul {
     text-indent: -18px;
 }
 
-.schudle:hover .drop {
-    right: 0;
+.schudle__wrap:hover .drop__wrap {
+    right: 420px;
+    
 }
 
 .drop {
@@ -255,51 +256,47 @@ ul {
     display: block;
 }
 
-.navigation__link_color_black {
-    color: #000;
-    text-decoration: underline;
-}
-
-.navigation__link--icon :before {
-    content: "";
-    vertical-align: middle;
-    margin-right: 19px;
+.navigation__link--icon {
+    background-repeat: no-repeat;
+    background-image: url(../img/css_sprites.png);
+    transition: .5s;
 }
 
 .navigation__link--main-icon {
-    background-image: url(../img/main_icon.png);
-    background-repeat: no-repeat;
+    width: 17px;
+    height: 15px;
+    background-position: -10px -10px;
 }
 
 .navigation__link--feed-icon {
-    background-image: url(../img/feed_icon_pink.png);
+    width: 20px;
     height: 18px;
-    background-repeat: no-repeat;
-    transition: .4s;
+    background-position: -10px -190px;
+}
+
+.navigation__link--feed-icon:hover {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -152px;
+    color: #000;
 }
 
 .navigation__link--wallet-icon {
-    background-image: url(../img/wallet_icon_pink.png);
-    background-repeat: no-repeat;
-    transition: .4s;
+    width: 19px;
+    height: 16px;
+    background-position: -10px -116px;
 }
 
-.navigation__link__star_active:hover,
-.navagation__link--star-icon {
-    color: #221f1f;
-    background-image: url(../img/feed_icon.png);
-    width: 20px;
-    height: 18px;
-    background-repeat: no-repeat;
+.navigation__link--wallet-icon:hover {
+    width: 19px;
+    height: 16px;
+    background-position: -10px -80px;
+    color: #000;
 }
 
-.navigation__link__wallet_active:hover,
-.navagation__link--wallet-icon {
-    color: #221f1f;
-    background-image: url(../img/wallet_icon.png);
-    width: 20px;
-    height: 18px;
-    background-repeat: no-repeat;
+.navigation__link_color_black {
+    color: #000;
+    text-decoration: underline;
 }
 
 /*ASIDE*/

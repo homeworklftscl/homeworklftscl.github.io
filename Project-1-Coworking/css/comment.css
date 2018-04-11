@@ -136,6 +136,7 @@ ul {
 }
 
 .schudle__wrap {
+    position: relative;
     text-align: right;
 }
 
@@ -150,7 +151,7 @@ ul {
     z-index: 10;
     margin-top: 20px;
     right: 18%;
-    right: -300px;
+    right: -9999px;
 }
 
 .drop__wrap::before {
@@ -186,7 +187,7 @@ ul {
 }
 
 .schudle__wrap:hover .drop__wrap {
-    right: 420px;
+    right: 0;
 }
 
 .drop {
@@ -639,8 +640,8 @@ ul {
     display: none;
 }
 
-.btn__radio__yes,
-.btn__radio__no {
+.btn__radio_yes,
+.btn__radio_no {
     display: inline-block;
 }
 
@@ -670,7 +671,7 @@ ul {
     transform: scale(0);
 }
 
-.btn__radio__yes::before {
+.btn__radio_yes::before {
     content: "";
     color: #ec1e79;
 }

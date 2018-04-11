@@ -128,17 +128,20 @@ ul {
     text-decoration: underline;
     opacity: 0.8;
     transition: .4s;
-    cursor: pointer;
     display: inline-block;
+    cursor: pointer;
 }
 
 .sсhudle:hover .schudle__text {
     color: rgba(93, 209, 248, 0.7);
     transition: .4s;
 }
-
 .schudle__wrap {
+    position: relative;
     text-align: right;
+}
+.schudle:hover .drop__wrap {
+    right: 0;
 }
 
 .schudle {
@@ -152,7 +155,7 @@ ul {
     z-index: 10;
     margin-top: 20px;
     right: 18%;
-    right: -300px;
+    right: -9999px;
 }
 
 .drop__wrap::before {
@@ -185,10 +188,6 @@ ul {
     font-weight: 300;
     line-height: 18px;
     text-indent: -18px;
-}
-
-.schudle__wrap:hover .drop__wrap {
-    right: 420px;
 }
 
 .drop {

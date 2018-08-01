@@ -132,16 +132,14 @@ ul {
     cursor: pointer;
 }
 
-.sсhudle:hover .schudle__text {
+.schudle:hover .schudle__text {
     color: rgba(93, 209, 248, 0.7);
     transition: .4s;
 }
+
 .schudle__wrap {
     position: relative;
     text-align: right;
-}
-.schudle:hover .drop__wrap {
-    right: 0;
 }
 
 .schudle {
@@ -150,15 +148,19 @@ ul {
     position: relative;
 }
 
-.drop__wrap {
+.drop-wrap {
     position: absolute;
+    top: 70%;
     z-index: 10;
     margin-top: 20px;
-    right: 18%;
     right: -9999px;
 }
 
-.drop__wrap::before {
+.schudle:hover .drop-wrap {
+    right: 0;
+}
+
+.drop-wrap::before {
     content: '';
     width: 100%;
     height: 20px;
